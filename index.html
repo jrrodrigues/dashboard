@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Institucional</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>PortalNet</h2>
+            </div>
+
+            <nav>
+                <ul>
+                    <li class="active">🏠 Dashboard</li>
+                    <li>📄 Documentos</li>
+                    <li>📢 Comunicados</li>
+                    <li>👥 Usuários</li>
+                    <li>📊 Relatórios</li>
+                    <li>⚙ Configurações</li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+
+            <header class="topbar">
+                <div>
+                    <h1>Painel Institucional</h1>
+                    <p>Bem-vindo ao Portal Corporativo</p>
+                </div>
+
+                <div class="user-area">
+                    <span>Jairo Rodrigues</span>
+                </div>
+            </header>
+
+            <section class="cards">
+
+                <div class="card" id="cardDocumentos">
+                    <h3>Documentos</h3>
+                    <span>1.248</span>
+                </div>
+
+                <div class="card" id="cardProcessos">
+                    <h3>Processos</h3>
+                    <span>326</span>
+                </div>
+
+                <div class="card" id="cardUsuarios">
+                    <h3>Usuários</h3>
+                    <span>842</span>
+                </div>
+
+                <div class="card" id="cardChamados">
+                    <h3>Chamados</h3>
+                    <span>97</span>
+                </div>
+
+            </section>
+
+<section class="charts">
+
+    <div class="panel">
+        <h2>Processos por Mês</h2>
+        <canvas id="processosChart"></canvas>
+    </div>
+
+    <div class="panel">
+        <h2>Distribuição de Demandas</h2>
+        <canvas id="demandasChart"></canvas>
+    </div>
+
+</section>
+
+            <section class="dashboard-grid">
+
+                <div class="panel">
+                    <h2>Últimas Notícias</h2>
+
+                    <div class="news-item">
+                        <strong>Novo Portal Corporativo</strong>
+                        <p>Atualização concluída com melhorias de desempenho.</p>
+                    </div>
+
+                    <div class="news-item">
+                        <strong>Treinamento Interno</strong>
+                        <p>Capacitação dos servidores agendada para esta semana.</p>
+                    </div>
+
+                    <div class="news-item">
+                        <strong>Manutenção Programada</strong>
+                        <p>Sistemas ficarão indisponíveis no final de semana.</p>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <h2>Ações Rápidas</h2>
+
+                    <button onclick="abrirPagina('documentos')">
+                        Consultar Documentos
+                    </button>
+
+                    <button onclick="abrirPagina('usuarios')">
+                        Gestão de Usuários
+                    </button>
+
+                    <button onclick="abrirPagina('relatorios')">
+                        Emitir Relatórios
+                    </button>
+
+                    <button onclick="abrirPagina('suporte')">
+                        Abrir Chamado
+                    </button>
+                </div>
+
+            </section>
+
+<section class="panel">
+    <h2>Produtividade Anual</h2>
+    <canvas id="produtividadeChart"></canvas>
+</section>
+
+            <section class="panel">
+                <h2>Atividades Recentes</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Evento</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>05/10/2026</td>
+                            <td>Publicação de documento</td>
+                            <td class="ok">Concluído</td>
+                        </tr>
+
+                        <tr>
+                            <td>05/10/2026</td>
+                            <td>Atualização cadastral</td>
+                            <td class="ok">Concluído</td>
+                        </tr>
+
+                        <tr>
+                            <td>04/10/2026</td>
+                            <td>Abertura de chamado</td>
+                            <td class="warning">Em andamento</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </main>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"><ript>
+    <script src="app.js"></script>
+
+</body>
+</html>
